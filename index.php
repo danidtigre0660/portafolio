@@ -298,7 +298,7 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+                    <div class="col-lg-4 text-lg-start text-danger text-bold text-uppercase">Copyright &copy;2024</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="<?php echo $lista_configuraciones [13]['valor'];?>" 
                         aria-label="Twitter"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>
@@ -309,8 +309,8 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                         <i class="fa fa-envelope-open" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="link-dark text-decoration-none text-bold text-danger text-uppercase me-3" href="#!">Todos los derechos reservados;danidtigre.</a>
+                        
                     </div>
                 </div>
             </div>
