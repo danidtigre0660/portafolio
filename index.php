@@ -56,17 +56,17 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" /></a>-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <ul class="navbar-nav text-uppercase text-bold ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
+                       <!-- <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>-->
                         <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                     </ul>
                 </div>
@@ -76,10 +76,10 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading"><?php echo $lista_configuraciones [0]['valor'];?></div>
-                <div class="masthead-subheading text-uppercase"><?php echo $lista_configuraciones [1]['valor'];?></div>
+                <div class="masthead-subheading text-warning"><?php echo $lista_configuraciones [0]['valor'];?></div>
+                <div class="masthead-subheading text-uppercase text-bold text-warning"><?php echo $lista_configuraciones [1]['valor'];?></div>
 
-                <a class="btn btn-primary btn-xl text-uppercase" href="<?php echo $lista_configuraciones [3]['valor'];?>">
+                <a class="btn btn-primary btn-xl text-uppercase text-bold  text-black" href="<?php echo $lista_configuraciones [3]['valor'];?>">
                 <?php echo $lista_configuraciones [2]['valor'];?></a>
 
             </div>
@@ -90,7 +90,7 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><?php echo $lista_configuraciones [4]['valor'];?></h2>
-                    <h3 class="section-subheading text-muted">Todos nuestros servicios , para una mejor atencion</h3>
+                    <h3 class="section-subheading text-bold text-danger ">Todos nuestros servicios , para una mejor atencion</h3>
                 </div>
 
                 <div class="row text-center">
@@ -102,7 +102,7 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                             <i class="fas <?php echo $registros['icono'];?> fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3"><?php echo $registros['titulo'];?></h4>
-                        <p class="text-muted"><?php echo $registros['descripcion'];?></p>
+                        <p class="text-bold text-danger"><?php echo $registros['descripcion'];?></p>
                     </div>
                     <?php } ?>
 
@@ -187,7 +187,7 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         </section>
 
         <!-- About-->
-        <section class="page-section" id="about">
+        <!--<section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase"><?php echo $lista_configuraciones [10]['valor'];?></h2>
@@ -224,7 +224,7 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         </section>
 
 
-        <!-- Team-->
+         Team
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
@@ -254,7 +254,7 @@ $lista_configuraciones=$sentencia->fetchAll(PDO::FETCH_ASSOC);
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"><?php echo $lista_configuraciones [9]['valor'];?>   Nuestra dedicacion ,se demuestra en la eleccion 
                         del mejor personal para la creacion de software. </p></div>
                 </div>
-            </div>
+            </div>-->
         </section>
         <!-- Clients-->
         <div class="py-5">
